@@ -1,0 +1,171 @@
+/* Home specific */
+.hero{
+    position:relative;
+    
+}
+.hero-text{
+    
+    position: absolute;
+    top: 10%;
+    left:42%;
+    color:var(--main-2-color);
+    font-size: 2rem;
+    line-height: 20px;
+}
+.hero-image{
+    width: 100vw;
+}
+.main{
+    max-width:1200px;
+    background-color: var(--main-1-color);
+    margin: auto;
+}
+.cards-grid{
+    position: relative;
+    top: -120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap:30px;
+    color: var(--main-1-color);
+    z-index: 3;
+}
+.tall-card{
+    grid-row-start: 1;
+    grid-row-end: span 2;  
+    padding:10px 20px;
+}
+.standard-card{
+    padding:10px 20px;
+}
+
+.tall-card-header{
+    font-size: 1.9rem;
+    font-weight: 800;
+    line-height: 0.3rem;
+}
+
+.tall-card ul li{
+    font-size:1.1rem;
+    line-height: 2.3rem;
+    
+    list-style: none;
+}
+.tall-card ul li::before{
+    content:'';
+    display:inline-block;
+    height: 1.5em;
+    width: 1.5em;
+    background-image: url('../icons/tickwhite.svg');
+    background-size: contain;
+    background-repeat: none;
+    margin-right:0.5em;
+    padding: 0;   
+    
+}
+
+#card-1{
+    background-color: var(--box-1-color);
+}
+
+#card-2, #card-4{
+    background-color: var(--box-2-color);
+}
+
+#card-3{
+    background-color: var(--box-3-color);
+}
+
+#card-5{
+    background-color: var(--box-4-color);
+}
+
+
+.card-header{
+    font-size: 1.5rem;
+    font-weight: 800;
+       
+}
+.card-header-light{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 0.8rem;
+}
+.card-link{
+    text-decoration: none;
+    color: var(--main-1-color);
+    font-size: 2rem;
+    font-weight: 800;
+    }
+
+.card-link:hover{
+   opacity: 0.7;
+}
+
+#index-image-row{
+    position: relative;
+    top:-100px
+}
+
+
+@media screen and (max-width: 1000px){
+.hero-text h1{
+    font-size: 1.6rem;
+}
+.hero-text p{
+    font-size: 1rem;
+}
+
+.card-header{
+    font-size: 1.1rem;
+    font-weight: 800;
+    
+    
+}
+.card-header-light{
+    font-size: 1.0rem;
+    font-weight: 400;
+    line-height: 0.4rem;
+}
+.card-link{
+    text-decoration: none;
+    color: var(--main-1-color);
+    font-size: 1.4rem;
+    font-weight: 800;
+    }
+.tall-card-header{
+    font-size: 1.1rem;
+    font-weight: 800;
+    }
+
+.tall-card ul li{
+    font-size:.8rem;
+    line-height: 1.4rem;
+        
+}
+.tall-card ul li::before{
+    height: 1em;
+    width: 1em;
+    margin-right: 0.3em; 
+}
+.tall-card ul{
+    padding:0px 0px 0px 5px;
+    margin:0;
+}
+}
+@media screen and (max-width: 720px){
+
+    .tall-card{
+        display: none;
+    }
+
+    .cards-grid{
+        grid-template-columns: 1fr 1fr;
+        top: 0px;
+        column-gap: 15px;
+        row-gap:15px;
+    }
+    .hero-text{
+        display: none;
+    }
+}

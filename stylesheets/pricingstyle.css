@@ -1,0 +1,37 @@
+
+.pricing-table-section h1{
+    margin-left:50px;
+}
+.pricing-table{
+    width: 80%;
+    margin:auto;
+    padding: 0;
+    border-collapse: collapse;
+    border: 1px black solid;
+}
+
+.pricing-table th{
+    background-color: var(--main-2-color);
+    color: white;
+    border: 1px black solid;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+.pricing-table td{
+    border: 1px black solid;
+    padding: 6px;
+    text-align: center;
+}
+
+@media screen and (max-width:720px){
+    .pricing-table-section h1{
+        padding: 10px 25px;
+        margin: auto;
+    }
+    .pricing-table{
+        width:90%;
+    }
+    .pricing-table th{
+        font-size: 1.1rem;
+    }
+}
